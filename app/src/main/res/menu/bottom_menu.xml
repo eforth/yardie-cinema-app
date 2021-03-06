@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/feedFragment"
+        android:icon="@drawable/feed"
+        android:title="@string/feed"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/accountFragment"
+        android:icon="@drawable/account"
+        android:title="@string/account"
+        app:showAsAction="ifRoom"/>
+</menu>
