@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="me.ervinforth.yardiecinema.fragments.HomeFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="me.ervinforth.yardiecinema.fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="me.ervinforth.yardiecinema.fragments.FeedFragment"
+        android:label="fragment_parking"
+        tools:layout="@layout/fragment_feed" />
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="me.ervinforth.yardiecinema.fragments.MovieDetailsFragment"
+        android:label="fragment_movie_details"
+        tools:layout="@layout/fragment_movie_details" >
+        <action
+            android:id="@+id/action_movieDetailsFragment_to_payTicketDialogFragment"
+            app:destination="@id/payTicketDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/payTicketDialogFragment"
+        android:name="me.ervinforth.yardiecinema.fragments.PayTicketDialogFragment"
+        android:label="dialog_fragment_pay_ticket"
+        tools:layout="@layout/dialog_fragment_pay_ticket" />
+</navigation>

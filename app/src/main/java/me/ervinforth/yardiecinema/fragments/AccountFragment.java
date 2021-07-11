@@ -1,12 +1,13 @@
-package me.ervinforth.yardiecinema;
+package me.ervinforth.yardiecinema.fragments;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
+
+import me.ervinforth.yardiecinema.R;
 
 public class AccountFragment extends Fragment {
 
